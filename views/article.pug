@@ -1,0 +1,10 @@
+extends layout
+
+block content
+ h1.title= article.title
+ h2.subtitle written by 
+  span= article.author
+ p= article.body
+ hr
+ a.button.is-warning(style='width: 50%', href='/article/edit/'+article._id) Edit
+ a.button.is-danger.delete-article(style='width: 50%', href='#', data-id=article._id) Delete

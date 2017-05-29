@@ -1,0 +1,16 @@
+extends layout
+
+block content
+ h1.title #{title}
+ form(method='POST', action='/articles/edit/'+article._id)
+  .control
+   label.label Title:
+   input.input(name='title', type='text', value=article.title)
+  .control
+   label.label Author:
+   input.input(name='author', type='text', value=article.author)
+  .control
+   label.label body:
+   textarea.textarea(name='body')= article.body
+   br
+  input.button.is-primary(value="save", type='submit', style='width: 100%;')

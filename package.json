@@ -1,0 +1,26 @@
+{
+  "name": "nodekb",
+  "version": "1.0.0",
+  "description": "a simple knowledgebase app",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app"
+  },
+  "keywords": [
+    "express",
+    "node.js",
+    "mongoose",
+    "mongodb",
+    "database",
+    "nosql"
+  ],
+  "author": "jesse",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.17.2",
+    "bulma": "^0.4.2",
+    "express": "^4.15.3",
+    "mongoose": "^4.10.3",
+    "pug": "^2.0.0-rc.1"
+  }
+}

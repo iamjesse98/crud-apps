@@ -1,0 +1,7 @@
+extends layout
+
+block content
+ h1.title #{title}
+ div.content
+  each article, i in articles
+   a.button.is-light(style='width: 100%;',href='/article/'+article._id)= article.title

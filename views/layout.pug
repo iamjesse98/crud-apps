@@ -1,0 +1,20 @@
+doctype html
+html
+ head
+  link(rel='stylesheet', href='/bulma.css')
+  meta(name='viewport', content="width=device-width, initial-scale=1.0, user-scalable=no")
+  title knowledgebase
+ body
+  nav.level(style='background: #00d1b2; padding: 3px;')
+   div.level-left
+    h1.level-item.title.is-3(style='color: #fff;') KnowledgeBase
+   div.level-right
+    a.level-item(style='color: #fff;', href='/') Home
+    a.level-item(style='color: #fff;', href='/articles/add') Add an article
+  div(style='padding: 5px')
+   block content
+   br
+   hr
+   footer
+    p Copyright &copy; 2017
+  script(src='/js/main.js')

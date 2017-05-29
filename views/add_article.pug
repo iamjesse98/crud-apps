@@ -1,0 +1,16 @@
+extends layout
+
+block content
+ h1.title #{title}
+ form(method='POST', action='/articles/add')
+  .control
+   label.label Title:
+   input.input(name='title', type='text')
+  .control
+   label.label Author:
+   input.input(name='author', type='text')
+  .control
+   label.label body:
+   textarea.textarea(name='body')
+   br
+  input.button.is-primary(value="Add", type='submit', style='width: 100%;')
